@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button, ListGroup } from 'react-bootstrap';
 import { FaGoogle, FaGithub, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import Qzoon from '../Qzoon/Qzoon';
+import banner from '../../../assets/bg.png';
 
 const RightNav = () => {
     return (
@@ -13,11 +15,17 @@ const RightNav = () => {
             <div>
                 <h2>Fine us on</h2>
                 <ListGroup>
-                    <ListGroup.Item><FaFacebook /> Cras justo odio</ListGroup.Item>
-                    <ListGroup.Item><FaTwitter /> Dapibus ac facilisis in</ListGroup.Item>
-                    <ListGroup.Item><FaInstagram /> Morbi leo risus</ListGroup.Item>
+                    <ListGroup.Item><FaFacebook /> Facebook</ListGroup.Item>
+                    <ListGroup.Item><FaTwitter /> Twitter</ListGroup.Item>
+                    <ListGroup.Item><FaInstagram /> Instagram</ListGroup.Item>
                 </ListGroup>
             </div>
+            <Qzoon></Qzoon>
+
+            <div>
+                <img src={banner} alt="" />
+            </div>
+            
         </div>
     );
 };
